@@ -2,5 +2,6 @@
 
 if [[ "${UID}" -ne 0 ]]
     then echo "You need to execute the script with root privileges."
-    exit
+    exit 1
 fi
+
