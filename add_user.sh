@@ -16,3 +16,5 @@ then
     exit 1
 fi
 
+echo "${USERNAME}:${PASSWORD}" | chpasswd
+
