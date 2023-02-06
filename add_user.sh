@@ -17,4 +17,11 @@ then
 fi
 
 echo "${USERNAME}:${PASSWORD}" | chpasswd
+passwd -e "${USERNAME}"
 
+echo
+echo "========================="
+echo "Username: $USERNAME"
+echo "Initial password: $PASSWORD"
+echo "Host: $HOSTNAME"
+echo "========================="
